@@ -25,7 +25,13 @@
         <label for="burgerType"> Eat a burger</label>
         <input type="text" name="name" id="userInput">
     </div>
+<br>
+    <button type="submit" class="addBurger" data-id="{{this.id}}">Burger added</button>
 
-    <button type="submit" class="addBurger">Burger added</button>
+    	{{!-- <button class="devoured" data-id="{{id}}" data-="{{}}">
+		{{#if sleep}}Devoured!{{else}}Not Devoured!{{/if}}
+	</button> --}}
+
+    <button class="deleteBurgers" data-id="{{this.id}}">Delete Burgers</button>
 
 </form>
