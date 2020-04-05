@@ -5,15 +5,15 @@ Eat-Da- burger is a restaurant app that lets you input the names of burgers you 
 
 # Installation
 
-The Packages I used to install where Express, Express-handlebars, and mysql.
+The Packages I used to install were Express, Express-handlebars, and mysql.
 ---
 
-![packages](/public/assets/packages.png)
+![packages](/public/assets/Packages.png)
 
 
 # Screen Shot Of Application
 
-![home](/public/assets/home.png)
+![home](/public/assets/Home.png)
 
 
 

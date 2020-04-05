@@ -1,9 +1,11 @@
 $(function(){
-    $(".addBurger").on("submit", event =>{
+    $(".create-form").on("submit", event =>{
         event.preventDefault();
+        console.log("HI");
+        
 
         const newBurger ={
-            burgerName: $("userInput").val().trim()
+            burgerName: $("#userInput").val().trim()
         };
 
         $.ajax("/api/burgers",{
