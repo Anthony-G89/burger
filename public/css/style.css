@@ -1,3 +1,61 @@
 body{
-    background-color: aqua;
+
+}
+
+.CompanyLogo{
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    height: 175px;
+}
+
+.appName{
+    text-align: center;
+    
+}
+
+.h2-header{
+    border-bottom: black 1px solid;
+    width: 30%;
+
+}
+
+.form-group{
+    display:block;
+    margin:0 auto;
+    width:200px;
+    
+
+}
+
+.addBurger{
+  margin: 7px 0 0 35px;
+  background-color: blanchedalmond;
+  color: blue;
+  padding: 10px;
+}
+
+h3{
+    margin-left: -20px;
+}
+
+.devoured{
+    padding: 7px;
+    border-radius: 8px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    background-color: chartreuse;
+
+}
+
+.deleteBurgers{
+    padding: 7px;
+    border-radius: 8px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: medium;
+    color: red;
+    background-color: yellow;
+
+
+
 }

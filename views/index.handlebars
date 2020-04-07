@@ -1,40 +1,42 @@
-<h1>Eat-Da-Burger!</h1>
+<img src="/assets/burgers.jpg" alt="Logo" class="CompanyLogo" height="300px" width="350px">
 
 
+<h1 class="appName">Eat-Da-Burger!</h1>
+
+
+
+<h2 class="h2-header">Burgers just ordered!</h2>
 <ul>
   {{#each burgers}}
-    {{#unless devoured }}
-    <h3>{{burger_name}}</h3>
-    <button class="devoured" data-id="{{this.id}}" data-foodNowDevoured ="{{devoured}}" >
-		Devoured
-	</button>
-  <button class="deleteBurgers" data-id="{{this.id}}">Delete Burgers</button>
-    {{/unless}}
+  {{#unless devoured }}
+  <h3>{{this.burger_name}} <button class="devoured" data-id="{{this.id}}">Devoured!</button></h3>
+  {{/unless}}
   {{/each}}
 </ul>
 
-<h2>Devoured</h2>
+
+
+<h2 class="h2-header"> Burgers Devoured! Yummy!</h2>
 
 <ul>
-
   {{#each burgers}}
-    {{#if devoured }}
-    <h3>{{burger_name}}</h3>
-    {{/if}}
+  {{#if devoured }}
+  <h3>{{this.burger_name}} <button class="deleteBurgers" data-id="{{this.id}}">Delete Burger</button></h3>
+  {{/if}}
   {{/each}}
 </ul>
 
-	
+
 <form class="create-form">
   {{burger_name}}
-    <div class="form-group">
-        <label for="userInput"> Eat a burger</label>
-        <input type="text"  id="userInput">
-    </div>
-<br>
-    <button type="submit" class="addBurger" data-id="{{this.id}}">Burger added</button>
+  <div class="form-group">
+    {{!-- <label for="userInput"> Enter a burger</label> --}}
+    <input type="text" id="userInput" placeholder="Please enter a burger">
+    <br>
+    <button type="submit" class="addBurger" data-id="{{this.id}}">Submit</button>
 
-    
-    
+  </div>
+
+
 
 </form>

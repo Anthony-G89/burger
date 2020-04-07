@@ -5,6 +5,10 @@ $(document).ready(function () {
         const newBurger = {
             burgerName: $("#userInput").val().trim()
         };
+        if(!newBurger.burgerName){
+           return alert("please enter a burger");
+            
+        };
 
         $.ajax("/api/burgers", {
             type: "POST",
@@ -17,12 +21,13 @@ $(document).ready(function () {
         });
     });
 
-    $(".devoured").on("click", event => {
+    $(".devoured").on("click", function(event) {
+        event.preventDefault();
         const id = $(this).data("id");
         const foodNowDevoured = $(this).data("foodNowDevoured");
 
         const nowDevoured = {
-            devoured: foodNowDevoured
+            devoured: true
         };
 
         $.ajax("/api/burgers/" + id, {
@@ -36,7 +41,8 @@ $(document).ready(function () {
         });
     });
 
-    $(".deleteBurgers").on("click", event => {
+    $(".deleteBurgers").on("click", function (event) {
+        event.preventDefault();
         const id = $(this).data("id");
 
         $.ajax("/api/burgers/" + id, {
