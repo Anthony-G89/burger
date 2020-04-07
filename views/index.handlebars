@@ -5,6 +5,10 @@
   {{#each burgers}}
     {{#unless devoured }}
     <h3>{{burger_name}}</h3>
+    <button class="devoured" data-id="{{this.id}}" data-foodNowDevoured ="{{devoured}}" >
+		Devoured
+	</button>
+  <button class="deleteBurgers" data-id="{{this.id}}">Delete Burgers</button>
     {{/unless}}
   {{/each}}
 </ul>
@@ -20,7 +24,7 @@
   {{/each}}
 </ul>
 
-
+	
 <form class="create-form">
   {{burger_name}}
     <div class="form-group">
@@ -30,10 +34,7 @@
 <br>
     <button type="submit" class="addBurger" data-id="{{this.id}}">Burger added</button>
 
-    	{{!-- <button class="devoured" data-id="{{id}}" data-="{{}}">
-		{{#if sleep}}Devoured!{{else}}Not Devoured!{{/if}}
-	</button> --}}
-
-    <button class="deleteBurgers" data-id="{{this.id}}">Delete Burgers</button>
+    
+    
 
 </form>

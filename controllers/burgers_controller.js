@@ -5,7 +5,7 @@ const burgers = require("../models/burger");
 
 router.get("/", (req, res) => {
     burgers.all(results => {
-        
+
         res.render("index", {
             burgers: results
         });
@@ -16,29 +16,32 @@ router.post("/api/burgers", (req, res) => {
     burgers.create([
         "burger_name", "devoured"
     ], [
-        req.body.burger_name, req.body.devoured
+        req.body.burgerName, false
     ], function (results) {
         res.json({ id: results.insertId });
     });
 });
 
-router.put(".api/burgers/:id", (req, res) =>{
+router.put("/api/burgers/:id", (req, res) => {
     const condition = "id =" + req.params.id;
+
+    console.log("condition", condition);
+
     burgers.update({
-        burger_name: req.body.burger_name
-    }, condition, function(results){
-        if(results.changedRows == 0){
+        devoured: req.body.devoured
+    }, condition, function (results) {
+        if (results.changedRows == 0) {
             return res.status(404).end();
-        } else{
+        } else {
             res.status(200).end();
         }
-    })
-})
+    });
+});
 
-router.delete("/api/burgers/:id",  (req, res) => {
+router.delete("/api/burgers/:id", (req, res) => {
     const condition = "id =" + req.params.id;
 
-    burger.delete(condition, function (results) {
+    burgersc.delete(condition, function (results) {
         if (results.affectedRows == 0) {
             return res.status(404).end();
         } else {
