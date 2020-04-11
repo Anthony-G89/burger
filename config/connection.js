@@ -22,5 +22,5 @@ connection.connect(err => {
 
 });
 
-connection.connect();
+
 module.exports = connection;
