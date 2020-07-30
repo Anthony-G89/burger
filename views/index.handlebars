@@ -1,12 +1,12 @@
-<img src="/assets/burgers.jpg" alt="Logo" class="CompanyLogo" height="300px" width="350px">
+<img src="/assets/burgers.jpg" alt="Logo" class="CompanyLogo">
 
 
-<h1 class="appName">Eat-Da-Burger!</h1>
+<h1 class="appName text-center">Eat-Da-Burger!</h1>
 
 
 
 <h2 class="h2-header">Burgers just ordered!</h2>
-<ul>
+<ul class="containerTwo">
   {{#each burgers}}
   {{#unless devoured }}
   <h3>{{this.burger_name}} <button class="devoured" data-id="{{this.id}}">Devoured!</button></h3>
@@ -16,12 +16,12 @@
 
 
 
-<h2 class="h2-header"> Burgers Devoured! Yummy!</h2>
 
-<ul>
+<ul class="container">
+  <h2 class="titleDevoured"> Burgers Devoured!</h2>
   {{#each burgers}}
   {{#if devoured }}
-  <h3>{{this.burger_name}} <button class="deleteBurgers" data-id="{{this.id}}">Delete Burger</button></h3>
+  <h3>{{this.burger_name}}  <button class="deleteBurgers" data-id="{{this.id}}">Delete Burger</button></h3>
   {{/if}}
   {{/each}}
 </ul>
@@ -30,8 +30,7 @@
 <form class="create-form">
   {{burger_name}}
   <div class="form-group">
-    {{!-- <label for="userInput"> Enter a burger</label> --}}
-    <input type="text" id="userInput" placeholder="Please enter a burger">
+    <input type="text" id="userInput" placeholder="Enter a burger">
     <br>
     <button type="submit" class="addBurger" data-id="{{this.id}}">Submit</button>
 

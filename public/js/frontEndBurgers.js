@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
     $(".create-form").on("submit", event => {
         event.preventDefault();
 
@@ -14,7 +15,7 @@ $(document).ready(function () {
             type: "POST",
             data: newBurger
         }).then(function () {
-            console.log("New Burger added");
+            alert("New Burger added");
 
             location.reload();
 
@@ -23,6 +24,7 @@ $(document).ready(function () {
 
     $(".devoured").on("click", function(event) {
         event.preventDefault();
+        
         const id = $(this).data("id");
         const foodNowDevoured = $(this).data("foodNowDevoured");
 
@@ -43,6 +45,7 @@ $(document).ready(function () {
 
     $(".deleteBurgers").on("click", function (event) {
         event.preventDefault();
+        
         const id = $(this).data("id");
 
         $.ajax("/api/burgers/" + id, {

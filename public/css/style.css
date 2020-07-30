@@ -1,11 +1,42 @@
-body{
+.backGround {
+    background-color: burlywood;
+}
+.create-form{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 45%;
+    top: 35%;
 
+}
+
+.container {
+    position: absolute;
+    left: 82%;
+    top: 235px;
+}
+
+.containerTwo {
+    position: relative;
+}
+
+.titleDevoured {
+    text-align: center;
+    border-bottom: black 1px solid;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#userInput {
+    text-align: center;
+    padding: 4px;
 }
 
 .CompanyLogo{
     display: block;
     margin: 0 auto;
-    width: 250px;
+    width: 350px;
     height: 175px;
 }
 
@@ -16,45 +47,42 @@ body{
 
 .h2-header{
     border-bottom: black 1px solid;
-    width: 30%;
-
-}
-
-.form-group{
-    display:block;
-    margin:0 auto;
-    width:200px;
+    width: fit-content;
     
 
 }
 
+
 .addBurger{
-  margin: 7px 0 0 35px;
-  background-color: blanchedalmond;
-  color: blue;
+  margin: 5px 0 0 54px;
+  background-color: black;
+  color: white;
   padding: 10px;
 }
 
-h3{
+/* h3{
     margin-left: -20px;
-}
+} */
 
 .devoured{
     padding: 7px;
     border-radius: 8px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: black;
-    background-color: chartreuse;
+    font-size: small;
+    font-weight: bold;
+    color: white;
+    background-color: blue;
 
 }
 
 .deleteBurgers{
-    padding: 7px;
+    padding: 2px;
     border-radius: 8px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: medium;
-    color: red;
-    background-color: yellow;
+    font-weight: bold;
+    color: white;
+    background-color: red;
 
 
 
