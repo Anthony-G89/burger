@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/knuckleh3ad89/burger.git"
+    "url": "git+https://github.com/Anthony-G89/burger.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/knuckleh3ad89/burger/issues"
+    "url": "https://github.com/Anthony-G89/burger/issues"
   },
-  "homepage": "https://github.com/knuckleh3ad89/burger#readme",
+  "homepage": "https://github.com/Anthony-G89/burger#readme",
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^4.0.1",
