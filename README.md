@@ -8,7 +8,7 @@ When the user click on the submit button
 the burger name will display
 ```
 
-# Table of Contents 
+## Table of Contents 
 
 * [Description](#Description)
 * [Installation](#Installation)
