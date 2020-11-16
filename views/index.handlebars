@@ -5,11 +5,11 @@
 
 
 
-<h2 class="h2-header">Burgers just ordered!</h2>
 <ul class="containerTwo">
+  <h2 class="h2-header">Burgers just ordered!</h2>
   {{#each burgers}}
   {{#unless devoured }}
-  <h3>{{this.burger_name}} <button class="devoured" data-id="{{this.id}}">Devoured!</button></h3>
+  <h2 class="orderedBurgers">{{this.burger_name}} <button class="devoured" data-id="{{this.id}}">Devoured</button></h2>
   {{/unless}}
   {{/each}}
 </ul>
@@ -21,7 +21,7 @@
   <h2 class="titleDevoured"> Burgers Devoured!</h2>
   {{#each burgers}}
   {{#if devoured }}
-  <h3>{{this.burger_name}} <button class="deleteBurgers" data-id="{{this.id}}">Delete Burger</button></h3>
+  <h2 class="devouredBurgers">{{this.burger_name}} <button class="deleteBurgers" data-id="{{this.id}}">Delete Burger</button></h2>
   {{/if}}
   {{/each}}
 </ul>
@@ -35,7 +35,4 @@
     <button type="submit" class="addBurger" data-id="{{this.id}}">Submit</button>
 
   </div>
-
-
-
 </form>

@@ -15,10 +15,9 @@ $(document).ready(function () {
             type: "POST",
             data: newBurger
         }).then(function () {
-            alert("New Burger added");
+            // alert("New Burger added");
 
             location.reload();
-
         });
     });
 

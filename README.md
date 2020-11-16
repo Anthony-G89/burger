@@ -16,7 +16,7 @@ working is Express, Express-handlebars, and mysql.
 
 ## Usage
 
-![home](/public/assets/BUrger-app.png)
+![home](/public/assets/Burger-app.png)
 
 
 
