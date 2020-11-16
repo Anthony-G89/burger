@@ -2,7 +2,11 @@
 
 ## Description
 ``` 
-Eat-Da- burger is a restaurant app that lets you input the names of burgers you would like to eat. Whenever, you submit a burger's name, it will display the burger on the left side of the page waiting for you to devour it!
+Eat-Da- burger is a restaurant app that lets you input the 
+names of burgers you would like to eat. 
+Whenever, you submit a burger's name, 
+it will display the burger on the left side of the page 
+waiting for you to devour it!
 ```
 
 ## Installation

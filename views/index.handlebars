@@ -6,7 +6,7 @@
 
 
 <ul class="containerTwo">
-  <h2 class="h2-header">Burgers just ordered!</h2>
+  <h2 class="h2-header">Burgers ordered</h2>
   {{#each burgers}}
   {{#unless devoured }}
   <h2 class="orderedBurgers">{{this.burger_name}} <button class="devoured" data-id="{{this.id}}">Devoured</button></h2>
@@ -15,10 +15,8 @@
 </ul>
 
 
-
-
 <ul class="container">
-  <h2 class="titleDevoured"> Burgers Devoured!</h2>
+  <h2 class="titleDevoured">Burgers Devoured</h2>
   {{#each burgers}}
   {{#if devoured }}
   <h2 class="devouredBurgers">{{this.burger_name}} <button class="deleteBurgers" data-id="{{this.id}}">Delete Burger</button></h2>
