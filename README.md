@@ -13,7 +13,7 @@ the burger name will display
 * [Description](#Description)
 * [Installation](#Installation)
 * [Usage](#Usage)
-* [Question](#Credits)
+* [Question](#Question)
 
 
 ## Installation
