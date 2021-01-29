@@ -104,7 +104,53 @@ right: 10px;
     color: white;
     background-color: red;
     cursor: pointer;
+}
 
+/*  Media Queries */
 
+@media only screen and (max-width: 420px) {
+    .CompanyLogo {
+        height: 127px;
+        width: 309px;
+    }
+    .appName {
+        position: relative;
+        bottom: 16px;
+    }
 
+    .create-form {
+        position: absolute;
+        left: 105px;
+        top: 197px;
+    }
+    .container {
+        position: absolute;
+        left: 228px;
+        top: 600px;
+    }
+    .containerTwo {
+        display: block;
+        position: absolute;
+        top: 266px;
+    }
+    .orderedBurgers {
+        font-size: 15px;
+        position: relative;
+        left: -6px;
+    }
+    .devoured {
+        padding: 2px 11px;
+        font-size: 13px;
+        border-radius: 3px;
+    }
+    .devouredBurgers {
+        position: relative;
+        left: 0;
+        font-size: 15px;
+    }
+    .deleteBurgers {
+        padding: 2px 11px;
+        font-size: 13px;
+        border-radius: 3px;
+    }
 }
